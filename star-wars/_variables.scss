@@ -1,0 +1,47 @@
+// color palettes
+//anh : A New Hope | esb: The Empire Strikes Back
+$palette: (
+  "anh": (
+    "mint-cream": #fbfffe,
+    "straw": #d7c178,
+    "mandys-pink": #f2b085,
+    "brandy-punch": #c48447,
+    "bakers-chocolate": #452f11,
+    "violet-blue": #af639e,
+    "au-chico": #9f5a60,
+    "malibu": #5f9fdd,
+    "egyptian-blue": #0d5aa0,
+    "tory-blue": #343d9b,
+  ),
+  "esb": (
+    "bright-red": #8a2437,
+    "fire-brick": #b62321,
+    "reef-gold": #a1a332,
+    "deco": #d7da8e,
+    "cyprus": #0b1b35,
+    "matisse": #3c5d78,
+    "regal-blue": #182e59,
+  ),
+);
+
+//spacing variables
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+//borders variables
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+//box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+//font sizes
+$base-font-size: 1rem;
+$font-size-xs: $base-font-size * 0.6;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+//lightsaber hue val
+$blade-hue-green: 120;

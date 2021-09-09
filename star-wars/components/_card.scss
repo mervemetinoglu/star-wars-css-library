@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+@mixin card {
+  display: block;
+  padding: $base-padding;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: math.div($base-border-radius, 4);
+  border: $base-border-thickness solid #ddd;
+}
+
+.card {
+  @include card;
+
+  .card-title {
+    font-size: $font-size-lg;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .card-body {
+    margin-top: 27px;
+    font-size: $base-font-size;
+    text-align: justify;
+  }
+
+  a {
+    font-size: $font-size-sm;
+    text-decoration: underline;
+    margin-top: 7px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "star-wars-css-library",
+  "version": "1.0.0",
+  "description": "star wars css library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

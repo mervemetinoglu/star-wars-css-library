@@ -1,0 +1,45 @@
+@each $palette, $map in $palette {
+  @each $key, $val in $map {
+    .text-#{$palette}-#{$key} {
+      color: $val;
+    }
+    .text-hover-#{$palette}-#{$key} {
+      &:hover {
+        color: $val;
+      }
+    }
+    .bg-#{$palette}-#{$key} {
+      background-color: $val;
+    }
+
+    //ligth variations
+    @for $i from 1 through 3 {
+      .text-#{$palette}-#{$key}-l-#{$i} {
+        color: mix(white, $val, $i * 10);
+      }
+      .text-hover-#{$palette}-#{$key}-l-#{$i} {
+        &:hover {
+          color: mix(white, $val, $i * 10);
+        }
+      }
+      .bg-#{$palette}-#{$key}-l-#{$i} {
+        background-color: mix(white, $val, $i * 10);
+      }
+    }
+
+    //dark variations
+    @for $i from 1 through 3 {
+      .text-#{$palette}-#{$key}-d-#{$i} {
+        color: mix(black, $val, $i * 10);
+      }
+      .text-hover-#{$palette}-#{$key}-d-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10);
+        }
+      }
+      .bg-#{$palette}-#{$key}-d-#{$i} {
+        background-color: mix(black, $val, $i * 10);
+      }
+    }
+  }
+}
